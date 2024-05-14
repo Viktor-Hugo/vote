@@ -1,5 +1,5 @@
 <template>
-  <h1>보유 포인트 : {{ useAccountStore().balance }} </h1>
+  <h1 v-if="useAccountStore().isAuthenticated">보유 포인트 : {{ useAccountStore().balance }} </h1>
   <RouterView />
 </template>
 

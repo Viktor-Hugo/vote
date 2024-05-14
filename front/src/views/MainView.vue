@@ -1,11 +1,13 @@
 <template>
   <div>
     <h1>발표 순서 입찰</h1>
-    <Vote 
-      v-for="vote in store.votes"
-      :key="vote.id"
-      :vote="vote"
-    ></Vote>
+    <section class="flex">
+      <Vote 
+        v-for="vote in store.votes"
+        :key="vote.id"
+        :vote="vote"
+      ></Vote>
+    </section>
   </div>
 </template>
 
@@ -23,5 +25,11 @@
 </script>
 
 <style scoped>
+.flex {
+  display: flex;
+  margin: auto;
+  width: 80%;
+  flex-wrap: wrap;
 
+}
 </style>
