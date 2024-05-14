@@ -27,9 +27,9 @@ def bid(request, order_pk):
     is_bid_success = False
 
     if user.score < payment:
-        return Response({'data': '보유 금액 부족'})
+        return Response({'data': '보유 금액 부족', 'balance': user.score}, status=status.HTTP_400_BAD_REQUEST)
     elif payment <= order.price:
-        return Response({'data': '구매 가능 금액 미달', 'price': order.price})
+        return Response({'data': '구매 가능 금액 미달', 'price': order.price}, status=status.HTTP_400_BAD_REQUEST)
 
     # 본인 입찰 갱신
     if order in user.orders.all():
@@ -79,29 +79,20 @@ def bid(request, order_pk):
 def bid_cancle(request, order_pk):
     user = request.user
     order = get_object_or_404(Order, pk=order_pk)
-    max_bid = Bid.objects.latest('payment')
-    if max_bid.team == user:
-        return Response({'data': '최상위 입찰자는 입찰 취소가 불가능 합니다.'}, status=status.HTTP_400_BAD_REQUEST)
+    bid = Bid.objects.filter(order=order).latest('payment')
+    if bid.team == user:
+        return Response({'data': '최상위 입찰자는 입찰 취소가 불가능 합니다.'}, status=status.HTTP_403_FORBIDDEN)
     
-    if user.orders.exists():
-        older_bid = Bid.objects.get(team=user, order=order)
-        user.score += older_bid.payment
+    elif user.orders.exists():
+        user.score += bid.payment
         order.teams.remove(user)
-
-        last_bid = Bid.objects.all().order_by('-payment').first()
-        if last_bid:
-            order.price = last_bid.payment
-        else:
-            order.price = 0
-
         user.save()
-        order.save()
         data = {
             'success': True,
-            'refundAmount': older_bid.payment,
+            'refundAmount': bid.payment,
             'balance': user.score,
             'lastBidPayment': order.price
         }
         return Response(data, status=status.HTTP_200_OK)
-    return Response(status=status.HTTP_403_FORBIDDEN)
+    return Response(status=status.HTTP_400_BAD_REQUEST)
     

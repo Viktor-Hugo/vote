@@ -16,6 +16,7 @@
   const store = useVoteStore()
   onMounted(() => {
     store.getVoteInfo()
+    // setInterval(() => store.getVoteInfo(), 10000)
   })
 
   

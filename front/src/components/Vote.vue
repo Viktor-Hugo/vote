@@ -16,14 +16,16 @@
 </template>
 
 <script setup>
-  import { ref } from 'vue'
+  import { computed } from 'vue'
   import BidForm from './BidForm.vue'
   import { useAccountStore } from '@/stores/accounts';
   const props = defineProps({
     vote: Object
   })
   const accountStore = useAccountStore()
-  const isLastBidTeam = props.vote.last_bid_team === accountStore.userInfo.id
+  const isLastBidTeam = computed(() => {
+    return props.vote.last_bid_team === accountStore.userInfo.id
+  })
 </script>
 
 <style scoped>

@@ -4,34 +4,33 @@ import { useRouter } from "vue-router"
 import axios from 'axios'
 
 export const useAccountStore = defineStore('account', () => {
+  const API_URL = import.meta.env.VITE_API_URL
   const router = useRouter()
   const isAuthenticated = ref(false)
   const userInfo = ref({
     token: null
   })
   const login = function ({username, password}) {
-    console.log(username, password)
     axios({
       method: 'post',
-      url: 'https://vote-tqrw.onrender.com/accounts/login/',
+      url: `${API_URL}/accounts/login/`,
       data: {
         username, password
       },
     })
     .then(res => {
-        console.log(res)
         userInfo.value.token = res.data.key
         isAuthenticated.value = true
         getUserInfo()
         router.push({name:'main'})
       })
-    .catch(err => window.alert(err))
+    .catch(err => {window.alert(err.data)})
   }
 
   const getUserInfo = function () {
     axios({
       method: 'get',
-      url: 'https://vote-tqrw.onrender.com/accounts/userinfo/',
+      url: `${API_URL}/accounts/userinfo/`,
       headers: {
         Authorization: `Token ${userInfo.value.token}`
       }

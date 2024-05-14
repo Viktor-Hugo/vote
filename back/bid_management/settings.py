@@ -25,17 +25,26 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-w#fialufvcjsczoq#4i)!mwity)d_r%dqr0jzrvix$!u627k=2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = [
-    'vote-tqrw.onrender.com',
-    'https://vote-tqrw.onrender.com/'
-]
+if DEBUG:
+    ALLOWED_HOSTS = [
+        # 'vote-tqrw.onrender.com',
+        # 'https://vote-tqrw.onrender.com/'
+    ]
 
-CORS_ALLOWED_ORIGINS = [
-    'https://vote-1.onrender.com',
-    # 'http://localhost:5173',
-]
+    CORS_ALLOWED_ORIGINS = [
+        'http://localhost:5173',
+    ]
+else:
+    ALLOWED_HOSTS = [
+        'vote-tqrw.onrender.com',
+        'https://vote-tqrw.onrender.com/'
+    ]
+
+    CORS_ALLOWED_ORIGINS = [
+        'https://vote-1.onrender.com',
+    ]
 
 # Application definition
 
