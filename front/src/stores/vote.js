@@ -9,7 +9,7 @@ export const useVoteStore = defineStore('vote', () => {
   const getVoteInfo = function () {
     axios({
       method: 'get',
-      url: 'https://vote-tqrw.onrender.com//api/v1/',
+      url: 'https://vote-tqrw.onrender.com/api/v1/',
       headers: {
         Authorization: `Token ${accountsStore.userInfo.token}`
       }
@@ -23,7 +23,7 @@ export const useVoteStore = defineStore('vote', () => {
   const bid = function ({vote, payment}) {
     axios({
       method: 'post',
-      url: `https://vote-tqrw.onrender.com//api/v1/bid/${vote.id}/`,
+      url: `https://vote-tqrw.onrender.com/api/v1/bid/${vote.id}/`,
       headers: {
         Authorization: `Token ${accountsStore.userInfo.token}`,
       },
