@@ -13,7 +13,7 @@ export const useAccountStore = defineStore('account', () => {
     console.log(username, password)
     axios({
       method: 'post',
-      url: 'http://127.0.0.1:8000/accounts/login/',
+      url: 'https://vote-tqrw.onrender.com/accounts/login/',
       data: {
         username, password
       },
@@ -31,7 +31,7 @@ export const useAccountStore = defineStore('account', () => {
   const getUserInfo = function () {
     axios({
       method: 'get',
-      url: 'http://127.0.0.1:8000/accounts/userinfo/',
+      url: 'https://vote-tqrw.onrender.com/accounts/userinfo/',
       headers: {
         Authorization: `Token ${userInfo.value.token}`
       }
