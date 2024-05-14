@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-w#fialufvcjsczoq#4i)!mwity)d_r%dqr0jzrvix$!u627k=2
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'vote-xste.onrender.com'
+    'vote-95nw.onrender.com',
+    'https://vote-95nw.onrender.com/'
 ]
 
 # CORS_ALLOWED_ORIGINS = [
