@@ -10,7 +10,7 @@
         (
           vote.last_bid_team != useAccountStore().userInfo.id
           &&
-          vote.teams.some(item => item.team === useAccountStore().userInfo.id)
+          vote.teams?.some(item => item.team === useAccountStore().userInfo.id)
         )
       "
       class="cancel-form"
