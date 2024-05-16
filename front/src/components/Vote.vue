@@ -7,7 +7,7 @@
     <h3>최상위 입찰가 : {{ vote.price }}</h3>
     <p>입찰 팀 목록 : </p>
     <div 
-      v-if="vote?.teams.length"
+      v-if="vote.teams?.length"
       class="bid-list"
     >
       <ul>

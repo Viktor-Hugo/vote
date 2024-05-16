@@ -44,5 +44,5 @@ export const useAccountStore = defineStore('account', () => {
   const balance = computed(() => {
     return userInfo.value.score
   })
-  return { isAuthenticated, login, userInfo, balance }
+  return { isAuthenticated, login, getUserInfo, userInfo, balance }
 },  { persist: true })
