@@ -14,3 +14,10 @@ class Bid(models.Model):
     team = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     order = models.ForeignKey(Order, on_delete=models.CASCADE)
     payment = models.IntegerField(default=0)
+
+class Settings(models.Model):
+    is_active = models.BooleanField(default=True)
+
+class AnnouncementResult(models.Model):
+    announcement_order = models.IntegerField()
+    winning_team = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)

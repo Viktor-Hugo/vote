@@ -6,4 +6,6 @@ urlpatterns = [
     path('', views.index),
     path('bid/<int:order_pk>/', views.bid),
     path('bid/<int:order_pk>/cancle/', views.bid_cancle),
+    path('deadline/', views.deadline),
+    path('winner/', views.winner),
 ]

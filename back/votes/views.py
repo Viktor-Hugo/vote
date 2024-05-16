@@ -4,9 +4,9 @@ from rest_framework import status
 from rest_framework.decorators import api_view, authentication_classes, permission_classes
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import IsAuthenticated
-from django.db.models import Max
-from .models import Order, Bid
-from .serializers import OrderListSerializers, BidSerializers
+from .models import Order, Bid, Settings, AnnouncementResult
+from .serializers import OrderListSerializer, BidSerializer, AnnouncementResultSerializer
+from .utils import check_deadline, calculate_winners
 
 # Create your views here.
 @api_view(['GET'])
@@ -14,12 +14,13 @@ from .serializers import OrderListSerializers, BidSerializers
 @permission_classes([IsAuthenticated])
 def index(request):
     orders = Order.objects.all()
-    serializer = OrderListSerializers(orders, many=True)
+    serializer = OrderListSerializer(orders, many=True)
     return Response(serializer.data, status=status.HTTP_200_OK)
 
 @api_view(['POST'])
 @authentication_classes([TokenAuthentication])
 @permission_classes([IsAuthenticated])
+@check_deadline
 def bid(request, order_pk):
     user = request.user
     payment = int(request.data.get('payment'))
@@ -42,7 +43,7 @@ def bid(request, order_pk):
         if user.score >= payment > order.price:
             user.score -= payment
             order.price = payment
-            serialzer = BidSerializers(data=request.data)
+            serialzer = BidSerializer(data=request.data)
             if serialzer.is_valid(raise_exception=True):
                 serialzer.save(team=user, order=order)
         
@@ -51,7 +52,7 @@ def bid(request, order_pk):
         order.save()
     # 최초 입찰
     elif user.score >= payment > order.price:
-        serialzer = BidSerializers(data=request.data)
+        serialzer = BidSerializer(data=request.data)
         if serialzer.is_valid(raise_exception=True):
             serialzer.save(team=user, order=order)
         order.price = payment
@@ -63,7 +64,7 @@ def bid(request, order_pk):
     data = {
             'success': True,
             'balance': user.score,
-            'order': OrderListSerializers(order).data,
+            'order': OrderListSerializer(order).data,
             # 'teams': order.teams.all()
         }
     if is_bid_success:
@@ -76,6 +77,7 @@ def bid(request, order_pk):
 @api_view(['POST'])
 @authentication_classes([TokenAuthentication])
 @permission_classes([IsAuthenticated])
+@check_deadline
 def bid_cancle(request, order_pk):
     user = request.user
     order = get_object_or_404(Order, pk=order_pk)
@@ -97,3 +99,26 @@ def bid_cancle(request, order_pk):
         return Response(data, status=status.HTTP_200_OK)
     return Response(status=status.HTTP_400_BAD_REQUEST)
     
+@api_view(['POST'])
+@authentication_classes([TokenAuthentication])
+@permission_classes([IsAuthenticated])
+def deadline(request):
+    if request.user.is_superuser:
+        setting = Settings.objects.first()
+        setting.is_active = not setting.is_active
+        setting.save()
+        return Response(status=status.HTTP_200_OK)
+    else:
+        return Response(status=status.HTTP_403_FORBIDDEN)
+
+@api_view(['GET'])
+@authentication_classes([TokenAuthentication])
+@permission_classes([IsAuthenticated])
+def winner(request):
+    if request.user.is_superuser:
+        calculate_winners()
+        results = AnnouncementResult.objects.all().order_by('announcement_order')
+        serializer = AnnouncementResultSerializer(results, many=True)
+        return Response(serializer.data)
+    else:
+        return Response(status=status.HTTP_403_FORBIDDEN)

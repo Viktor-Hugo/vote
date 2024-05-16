@@ -84,11 +84,246 @@
     }
 },
 {
+    "model": "votes.settings",
+    "pk": 1,
+    "fields": {
+        "is_active": true
+    }
+},
+{
     "model": "accounts.user",
     "pk": 1,
     "fields": {
-        "password": "pbkdf2_sha256$600000$03NFTk3HovxyEg5gT4W4L0$ZxOvy/tzEiUP2C3QBYwIADmAhCOq6deGW8hU8cJCb9Y=",
-        "last_login": "2024-05-10T02:01:37.891Z",
+        "password": "pbkdf2_sha256$600000$jBQeBhpvMYUMMVt1K7klQM$yilpN1QBMO/R/T3G0xwR9ie4Oq5nWkYwKWTokE7OTAY=",
+        "last_login": "2024-05-16T08:38:09Z",
+        "is_superuser": false,
+        "username": "임경태윤예리",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-16T08:38:09Z",
+        "score": 5437,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$NcNIrsz4b9lRURlYROtnWs$ZuQ76kiYv8OCsd6EcgXvtv47WC9nvXIBxD6+B2UVHjc=",
+        "last_login": "2024-05-16T08:38:27Z",
+        "is_superuser": false,
+        "username": "허유정박지원",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-16T08:38:26Z",
+        "score": 5301,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$63a2p1wj60mWwtYgCaQCzE$OAsZ97+mb1kGGlhn/quNiNKzfMAq0TqYTR/Fc91nJxU=",
+        "last_login": "2024-05-16T08:38:39Z",
+        "is_superuser": false,
+        "username": "김구태구현우",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-16T08:38:39Z",
+        "score": 4482,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$d1kZyfCHIk5QncifKxwZr8$i1cE/m3ExpZD3UQOQA1h51F6D8vUFVjH17pDdSwJQNE=",
+        "last_login": "2024-05-16T08:38:53Z",
+        "is_superuser": false,
+        "username": "이권민이승민",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-16T08:38:53Z",
+        "score": 5317,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$BlDwnMUoQd48xecJdnwt27$iHoteu0f7zP5lvBehMVlWeMZZhyVPXhZJN08BSGq46k=",
+        "last_login": "2024-05-16T08:39:04Z",
+        "is_superuser": false,
+        "username": "박재현김송희",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-16T08:39:04Z",
+        "score": 5213,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$18aQ4DLvVfv5vP8XKZEMFU$T7fP10llYyxehIB4JSkb6Uw/o3Np59nmet0zH17hMik=",
+        "last_login": "2024-05-16T08:39:13Z",
+        "is_superuser": false,
+        "username": "이유찬최지우",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-16T08:39:13Z",
+        "score": 5353,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 7,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$BzFhcn17qHdp55x6RFzY7C$w8nZXZ2WdYML7ZEnbzRWu3jtMFhjV1lM8C5/1S37RfU=",
+        "last_login": "2024-05-16T08:39:23Z",
+        "is_superuser": false,
+        "username": "이창호박동현",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-16T08:39:22Z",
+        "score": 5486,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 8,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$iFba0KuCb8FJNUoos9O76p$vFd0451MOiD7yzS2WRVlyRL+pSpi9ocbNQ1YPhoDXD4=",
+        "last_login": "2024-05-16T08:39:30Z",
+        "is_superuser": false,
+        "username": "정훈차민주",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-16T08:39:30Z",
+        "score": 4932,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 9,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$fNZAMS5jf2kXZfHEtdYAEE$y1v99t7Bi62a6j6/qSA67vnxJqYWK3jMkkjdl8URrrk=",
+        "last_login": "2024-05-16T08:39:39Z",
+        "is_superuser": false,
+        "username": "강현석박수빈",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-16T08:39:38Z",
+        "score": 5058,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 10,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$kgb5AESMQyV4bvhCd0zNXZ$dRmUAVV0iU56MBJcJqqZE+Lbftc5i7W5rwkr4e6266s=",
+        "last_login": "2024-05-16T08:39:48Z",
+        "is_superuser": false,
+        "username": "김동환이승지",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-16T08:39:48Z",
+        "score": 5251,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 11,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$nZdnTS2umaxFiQpWsw4WWG$Vm0fKr35IHKq37VRREob/uSXz6AiX3TupYqoBEKZJsc=",
+        "last_login": "2024-05-16T08:39:58Z",
+        "is_superuser": false,
+        "username": "김동현장효승",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-16T08:39:57Z",
+        "score": 4946,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 12,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$yo5uauUlldg4MJAMVfwphA$KXkD1SYR7MvfI2GYS7uV/QM5UJD1HG08J7667xrAMkw=",
+        "last_login": "2024-05-16T08:40:08Z",
+        "is_superuser": false,
+        "username": "김종덕어지민",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-16T08:40:07Z",
+        "score": 5361,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 13,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$26UqyinXSlqxc2dXJC8l5x$Be5vHnexaMJwSPoCmrmBL0HgvMES+UaUBO+YrVaxXjk=",
+        "last_login": "2024-05-16T08:40:49.173Z",
         "is_superuser": true,
         "username": "admin",
         "first_name": "",
@@ -96,18 +331,10 @@
         "email": "",
         "is_staff": true,
         "is_active": true,
-        "date_joined": "2024-05-10T02:00:56Z",
-        "score": 10000,
+        "date_joined": "2024-05-16T08:40:26.136Z",
+        "score": 0,
         "groups": [],
         "user_permissions": []
-    }
-},
-{
-    "model": "authtoken.token",
-    "pk": "10efe9060ef3cf72a66f8d0acce2bd9f8c99e41c",
-    "fields": {
-        "user": 1,
-        "created": "2024-05-10T02:01:37.866Z"
     }
 },
 {
@@ -122,11 +349,323 @@
     "model": "admin.logentry",
     "pk": 1,
     "fields": {
-        "action_time": "2024-05-10T02:01:22.874Z",
-        "user": 1,
-        "content_type": 3,
+        "action_time": "2024-05-16T08:40:55.453Z",
+        "user": 13,
+        "content_type": 2,
         "object_id": "1",
-        "object_repr": "admin",
+        "object_repr": "Order object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2024-05-16T08:40:56.901Z",
+        "user": 13,
+        "content_type": 2,
+        "object_id": "2",
+        "object_repr": "Order object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2024-05-16T08:40:58.271Z",
+        "user": 13,
+        "content_type": 2,
+        "object_id": "3",
+        "object_repr": "Order object (3)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2024-05-16T08:40:59.726Z",
+        "user": 13,
+        "content_type": 2,
+        "object_id": "4",
+        "object_repr": "Order object (4)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2024-05-16T08:41:01.116Z",
+        "user": 13,
+        "content_type": 2,
+        "object_id": "5",
+        "object_repr": "Order object (5)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2024-05-16T08:41:02.479Z",
+        "user": 13,
+        "content_type": 2,
+        "object_id": "6",
+        "object_repr": "Order object (6)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2024-05-16T08:41:03.783Z",
+        "user": 13,
+        "content_type": 2,
+        "object_id": "7",
+        "object_repr": "Order object (7)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2024-05-16T08:41:06.173Z",
+        "user": 13,
+        "content_type": 2,
+        "object_id": "8",
+        "object_repr": "Order object (8)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2024-05-16T08:41:07.637Z",
+        "user": 13,
+        "content_type": 2,
+        "object_id": "9",
+        "object_repr": "Order object (9)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2024-05-16T08:41:09.068Z",
+        "user": 13,
+        "content_type": 2,
+        "object_id": "10",
+        "object_repr": "Order object (10)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2024-05-16T08:41:10.606Z",
+        "user": 13,
+        "content_type": 2,
+        "object_id": "11",
+        "object_repr": "Order object (11)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2024-05-16T08:41:12.055Z",
+        "user": 13,
+        "content_type": 2,
+        "object_id": "12",
+        "object_repr": "Order object (12)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2024-05-16T08:45:06.032Z",
+        "user": 13,
+        "content_type": 5,
+        "object_id": "1",
+        "object_repr": "임경태윤예리",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Score\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2024-05-16T08:45:09.156Z",
+        "user": 13,
+        "content_type": 5,
+        "object_id": "1",
+        "object_repr": "임경태윤예리",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2024-05-16T08:45:47.540Z",
+        "user": 13,
+        "content_type": 5,
+        "object_id": "2",
+        "object_repr": "허유정박지원",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Score\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2024-05-16T08:46:19.923Z",
+        "user": 13,
+        "content_type": 5,
+        "object_id": "3",
+        "object_repr": "김구태구현우",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Score\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2024-05-16T08:46:47.304Z",
+        "user": 13,
+        "content_type": 5,
+        "object_id": "4",
+        "object_repr": "이권민이승민",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Score\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2024-05-16T08:47:14.697Z",
+        "user": 13,
+        "content_type": 5,
+        "object_id": "5",
+        "object_repr": "박재현김송희",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Score\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2024-05-16T08:47:44.365Z",
+        "user": 13,
+        "content_type": 5,
+        "object_id": "6",
+        "object_repr": "이유찬최지우",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Score\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2024-05-16T08:48:16.584Z",
+        "user": 13,
+        "content_type": 5,
+        "object_id": "7",
+        "object_repr": "이창호박동현",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Score\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2024-05-16T08:48:37.585Z",
+        "user": 13,
+        "content_type": 5,
+        "object_id": "8",
+        "object_repr": "정훈차민주",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Score\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2024-05-16T08:49:01.884Z",
+        "user": 13,
+        "content_type": 5,
+        "object_id": "9",
+        "object_repr": "강현석박수빈",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Score\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2024-05-16T08:49:39.625Z",
+        "user": 13,
+        "content_type": 5,
+        "object_id": "10",
+        "object_repr": "김동환이승지",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Score\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2024-05-16T08:50:07.973Z",
+        "user": 13,
+        "content_type": 5,
+        "object_id": "11",
+        "object_repr": "김동현장효승",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Score\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2024-05-16T08:50:31.088Z",
+        "user": 13,
+        "content_type": 5,
+        "object_id": "12",
+        "object_repr": "김종덕어지민",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"Score\"]}}]"
     }
@@ -207,503 +746,575 @@
     "model": "auth.permission",
     "pk": 9,
     "fields": {
-        "name": "Can add user",
+        "name": "Can add settings",
         "content_type": 3,
-        "codename": "add_user"
+        "codename": "add_settings"
     }
 },
 {
     "model": "auth.permission",
     "pk": 10,
     "fields": {
-        "name": "Can change user",
+        "name": "Can change settings",
         "content_type": 3,
-        "codename": "change_user"
+        "codename": "change_settings"
     }
 },
 {
     "model": "auth.permission",
     "pk": 11,
     "fields": {
-        "name": "Can delete user",
+        "name": "Can delete settings",
         "content_type": 3,
-        "codename": "delete_user"
+        "codename": "delete_settings"
     }
 },
 {
     "model": "auth.permission",
     "pk": 12,
     "fields": {
-        "name": "Can view user",
+        "name": "Can view settings",
         "content_type": 3,
-        "codename": "view_user"
+        "codename": "view_settings"
     }
 },
 {
     "model": "auth.permission",
     "pk": 13,
     "fields": {
-        "name": "Can add Token",
+        "name": "Can add announcement result",
         "content_type": 4,
-        "codename": "add_token"
+        "codename": "add_announcementresult"
     }
 },
 {
     "model": "auth.permission",
     "pk": 14,
     "fields": {
-        "name": "Can change Token",
+        "name": "Can change announcement result",
         "content_type": 4,
-        "codename": "change_token"
+        "codename": "change_announcementresult"
     }
 },
 {
     "model": "auth.permission",
     "pk": 15,
     "fields": {
-        "name": "Can delete Token",
+        "name": "Can delete announcement result",
         "content_type": 4,
-        "codename": "delete_token"
+        "codename": "delete_announcementresult"
     }
 },
 {
     "model": "auth.permission",
     "pk": 16,
     "fields": {
-        "name": "Can view Token",
+        "name": "Can view announcement result",
         "content_type": 4,
-        "codename": "view_token"
+        "codename": "view_announcementresult"
     }
 },
 {
     "model": "auth.permission",
     "pk": 17,
     "fields": {
-        "name": "Can add Token",
+        "name": "Can add user",
         "content_type": 5,
-        "codename": "add_tokenproxy"
+        "codename": "add_user"
     }
 },
 {
     "model": "auth.permission",
     "pk": 18,
     "fields": {
-        "name": "Can change Token",
+        "name": "Can change user",
         "content_type": 5,
-        "codename": "change_tokenproxy"
+        "codename": "change_user"
     }
 },
 {
     "model": "auth.permission",
     "pk": 19,
     "fields": {
-        "name": "Can delete Token",
+        "name": "Can delete user",
         "content_type": 5,
-        "codename": "delete_tokenproxy"
+        "codename": "delete_user"
     }
 },
 {
     "model": "auth.permission",
     "pk": 20,
     "fields": {
-        "name": "Can view Token",
+        "name": "Can view user",
         "content_type": 5,
-        "codename": "view_tokenproxy"
+        "codename": "view_user"
     }
 },
 {
     "model": "auth.permission",
     "pk": 21,
     "fields": {
-        "name": "Can add site",
+        "name": "Can add Token",
         "content_type": 6,
-        "codename": "add_site"
+        "codename": "add_token"
     }
 },
 {
     "model": "auth.permission",
     "pk": 22,
     "fields": {
-        "name": "Can change site",
+        "name": "Can change Token",
         "content_type": 6,
-        "codename": "change_site"
+        "codename": "change_token"
     }
 },
 {
     "model": "auth.permission",
     "pk": 23,
     "fields": {
-        "name": "Can delete site",
+        "name": "Can delete Token",
         "content_type": 6,
-        "codename": "delete_site"
+        "codename": "delete_token"
     }
 },
 {
     "model": "auth.permission",
     "pk": 24,
     "fields": {
-        "name": "Can view site",
+        "name": "Can view Token",
         "content_type": 6,
-        "codename": "view_site"
+        "codename": "view_token"
     }
 },
 {
     "model": "auth.permission",
     "pk": 25,
     "fields": {
-        "name": "Can add email address",
+        "name": "Can add Token",
         "content_type": 7,
-        "codename": "add_emailaddress"
+        "codename": "add_tokenproxy"
     }
 },
 {
     "model": "auth.permission",
     "pk": 26,
     "fields": {
-        "name": "Can change email address",
+        "name": "Can change Token",
         "content_type": 7,
-        "codename": "change_emailaddress"
+        "codename": "change_tokenproxy"
     }
 },
 {
     "model": "auth.permission",
     "pk": 27,
     "fields": {
-        "name": "Can delete email address",
+        "name": "Can delete Token",
         "content_type": 7,
-        "codename": "delete_emailaddress"
+        "codename": "delete_tokenproxy"
     }
 },
 {
     "model": "auth.permission",
     "pk": 28,
     "fields": {
-        "name": "Can view email address",
+        "name": "Can view Token",
         "content_type": 7,
-        "codename": "view_emailaddress"
+        "codename": "view_tokenproxy"
     }
 },
 {
     "model": "auth.permission",
     "pk": 29,
     "fields": {
-        "name": "Can add email confirmation",
+        "name": "Can add site",
         "content_type": 8,
-        "codename": "add_emailconfirmation"
+        "codename": "add_site"
     }
 },
 {
     "model": "auth.permission",
     "pk": 30,
     "fields": {
-        "name": "Can change email confirmation",
+        "name": "Can change site",
         "content_type": 8,
-        "codename": "change_emailconfirmation"
+        "codename": "change_site"
     }
 },
 {
     "model": "auth.permission",
     "pk": 31,
     "fields": {
-        "name": "Can delete email confirmation",
+        "name": "Can delete site",
         "content_type": 8,
-        "codename": "delete_emailconfirmation"
+        "codename": "delete_site"
     }
 },
 {
     "model": "auth.permission",
     "pk": 32,
     "fields": {
-        "name": "Can view email confirmation",
+        "name": "Can view site",
         "content_type": 8,
-        "codename": "view_emailconfirmation"
+        "codename": "view_site"
     }
 },
 {
     "model": "auth.permission",
     "pk": 33,
     "fields": {
-        "name": "Can add social account",
+        "name": "Can add email address",
         "content_type": 9,
-        "codename": "add_socialaccount"
+        "codename": "add_emailaddress"
     }
 },
 {
     "model": "auth.permission",
     "pk": 34,
     "fields": {
-        "name": "Can change social account",
+        "name": "Can change email address",
         "content_type": 9,
-        "codename": "change_socialaccount"
+        "codename": "change_emailaddress"
     }
 },
 {
     "model": "auth.permission",
     "pk": 35,
     "fields": {
-        "name": "Can delete social account",
+        "name": "Can delete email address",
         "content_type": 9,
-        "codename": "delete_socialaccount"
+        "codename": "delete_emailaddress"
     }
 },
 {
     "model": "auth.permission",
     "pk": 36,
     "fields": {
-        "name": "Can view social account",
+        "name": "Can view email address",
         "content_type": 9,
-        "codename": "view_socialaccount"
+        "codename": "view_emailaddress"
     }
 },
 {
     "model": "auth.permission",
     "pk": 37,
     "fields": {
-        "name": "Can add social application",
+        "name": "Can add email confirmation",
         "content_type": 10,
-        "codename": "add_socialapp"
+        "codename": "add_emailconfirmation"
     }
 },
 {
     "model": "auth.permission",
     "pk": 38,
     "fields": {
-        "name": "Can change social application",
+        "name": "Can change email confirmation",
         "content_type": 10,
-        "codename": "change_socialapp"
+        "codename": "change_emailconfirmation"
     }
 },
 {
     "model": "auth.permission",
     "pk": 39,
     "fields": {
-        "name": "Can delete social application",
+        "name": "Can delete email confirmation",
         "content_type": 10,
-        "codename": "delete_socialapp"
+        "codename": "delete_emailconfirmation"
     }
 },
 {
     "model": "auth.permission",
     "pk": 40,
     "fields": {
-        "name": "Can view social application",
+        "name": "Can view email confirmation",
         "content_type": 10,
-        "codename": "view_socialapp"
+        "codename": "view_emailconfirmation"
     }
 },
 {
     "model": "auth.permission",
     "pk": 41,
     "fields": {
-        "name": "Can add social application token",
+        "name": "Can add social account",
         "content_type": 11,
-        "codename": "add_socialtoken"
+        "codename": "add_socialaccount"
     }
 },
 {
     "model": "auth.permission",
     "pk": 42,
     "fields": {
-        "name": "Can change social application token",
+        "name": "Can change social account",
         "content_type": 11,
-        "codename": "change_socialtoken"
+        "codename": "change_socialaccount"
     }
 },
 {
     "model": "auth.permission",
     "pk": 43,
     "fields": {
-        "name": "Can delete social application token",
+        "name": "Can delete social account",
         "content_type": 11,
-        "codename": "delete_socialtoken"
+        "codename": "delete_socialaccount"
     }
 },
 {
     "model": "auth.permission",
     "pk": 44,
     "fields": {
-        "name": "Can view social application token",
+        "name": "Can view social account",
         "content_type": 11,
-        "codename": "view_socialtoken"
+        "codename": "view_socialaccount"
     }
 },
 {
     "model": "auth.permission",
     "pk": 45,
     "fields": {
-        "name": "Can add log entry",
+        "name": "Can add social application",
         "content_type": 12,
-        "codename": "add_logentry"
+        "codename": "add_socialapp"
     }
 },
 {
     "model": "auth.permission",
     "pk": 46,
     "fields": {
-        "name": "Can change log entry",
+        "name": "Can change social application",
         "content_type": 12,
-        "codename": "change_logentry"
+        "codename": "change_socialapp"
     }
 },
 {
     "model": "auth.permission",
     "pk": 47,
     "fields": {
-        "name": "Can delete log entry",
+        "name": "Can delete social application",
         "content_type": 12,
-        "codename": "delete_logentry"
+        "codename": "delete_socialapp"
     }
 },
 {
     "model": "auth.permission",
     "pk": 48,
     "fields": {
-        "name": "Can view log entry",
+        "name": "Can view social application",
         "content_type": 12,
-        "codename": "view_logentry"
+        "codename": "view_socialapp"
     }
 },
 {
     "model": "auth.permission",
     "pk": 49,
     "fields": {
-        "name": "Can add permission",
+        "name": "Can add social application token",
         "content_type": 13,
-        "codename": "add_permission"
+        "codename": "add_socialtoken"
     }
 },
 {
     "model": "auth.permission",
     "pk": 50,
     "fields": {
-        "name": "Can change permission",
+        "name": "Can change social application token",
         "content_type": 13,
-        "codename": "change_permission"
+        "codename": "change_socialtoken"
     }
 },
 {
     "model": "auth.permission",
     "pk": 51,
     "fields": {
-        "name": "Can delete permission",
+        "name": "Can delete social application token",
         "content_type": 13,
-        "codename": "delete_permission"
+        "codename": "delete_socialtoken"
     }
 },
 {
     "model": "auth.permission",
     "pk": 52,
     "fields": {
-        "name": "Can view permission",
+        "name": "Can view social application token",
         "content_type": 13,
-        "codename": "view_permission"
+        "codename": "view_socialtoken"
     }
 },
 {
     "model": "auth.permission",
     "pk": 53,
     "fields": {
-        "name": "Can add group",
+        "name": "Can add log entry",
         "content_type": 14,
-        "codename": "add_group"
+        "codename": "add_logentry"
     }
 },
 {
     "model": "auth.permission",
     "pk": 54,
     "fields": {
-        "name": "Can change group",
+        "name": "Can change log entry",
         "content_type": 14,
-        "codename": "change_group"
+        "codename": "change_logentry"
     }
 },
 {
     "model": "auth.permission",
     "pk": 55,
     "fields": {
-        "name": "Can delete group",
+        "name": "Can delete log entry",
         "content_type": 14,
-        "codename": "delete_group"
+        "codename": "delete_logentry"
     }
 },
 {
     "model": "auth.permission",
     "pk": 56,
     "fields": {
-        "name": "Can view group",
+        "name": "Can view log entry",
         "content_type": 14,
-        "codename": "view_group"
+        "codename": "view_logentry"
     }
 },
 {
     "model": "auth.permission",
     "pk": 57,
     "fields": {
-        "name": "Can add content type",
+        "name": "Can add permission",
         "content_type": 15,
-        "codename": "add_contenttype"
+        "codename": "add_permission"
     }
 },
 {
     "model": "auth.permission",
     "pk": 58,
     "fields": {
-        "name": "Can change content type",
+        "name": "Can change permission",
         "content_type": 15,
-        "codename": "change_contenttype"
+        "codename": "change_permission"
     }
 },
 {
     "model": "auth.permission",
     "pk": 59,
     "fields": {
-        "name": "Can delete content type",
+        "name": "Can delete permission",
         "content_type": 15,
-        "codename": "delete_contenttype"
+        "codename": "delete_permission"
     }
 },
 {
     "model": "auth.permission",
     "pk": 60,
     "fields": {
-        "name": "Can view content type",
+        "name": "Can view permission",
         "content_type": 15,
-        "codename": "view_contenttype"
+        "codename": "view_permission"
     }
 },
 {
     "model": "auth.permission",
     "pk": 61,
     "fields": {
-        "name": "Can add session",
+        "name": "Can add group",
         "content_type": 16,
-        "codename": "add_session"
+        "codename": "add_group"
     }
 },
 {
     "model": "auth.permission",
     "pk": 62,
     "fields": {
-        "name": "Can change session",
+        "name": "Can change group",
         "content_type": 16,
-        "codename": "change_session"
+        "codename": "change_group"
     }
 },
 {
     "model": "auth.permission",
     "pk": 63,
     "fields": {
-        "name": "Can delete session",
+        "name": "Can delete group",
         "content_type": 16,
-        "codename": "delete_session"
+        "codename": "delete_group"
     }
 },
 {
     "model": "auth.permission",
     "pk": 64,
     "fields": {
-        "name": "Can view session",
+        "name": "Can view group",
         "content_type": 16,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 65,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 17,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 66,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 17,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 67,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 17,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 68,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 17,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 69,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 18,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 70,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 18,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 71,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 18,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 72,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 18,
         "codename": "view_session"
     }
 },
@@ -727,13 +1338,29 @@
     "model": "contenttypes.contenttype",
     "pk": 3,
     "fields": {
+        "app_label": "votes",
+        "model": "settings"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "votes",
+        "model": "announcementresult"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
         "app_label": "accounts",
         "model": "user"
     }
 },
 {
     "model": "contenttypes.contenttype",
-    "pk": 4,
+    "pk": 6,
     "fields": {
         "app_label": "authtoken",
         "model": "token"
@@ -741,7 +1368,7 @@
 },
 {
     "model": "contenttypes.contenttype",
-    "pk": 5,
+    "pk": 7,
     "fields": {
         "app_label": "authtoken",
         "model": "tokenproxy"
@@ -749,7 +1376,7 @@
 },
 {
     "model": "contenttypes.contenttype",
-    "pk": 6,
+    "pk": 8,
     "fields": {
         "app_label": "sites",
         "model": "site"
@@ -757,7 +1384,7 @@
 },
 {
     "model": "contenttypes.contenttype",
-    "pk": 7,
+    "pk": 9,
     "fields": {
         "app_label": "account",
         "model": "emailaddress"
@@ -765,7 +1392,7 @@
 },
 {
     "model": "contenttypes.contenttype",
-    "pk": 8,
+    "pk": 10,
     "fields": {
         "app_label": "account",
         "model": "emailconfirmation"
@@ -773,7 +1400,7 @@
 },
 {
     "model": "contenttypes.contenttype",
-    "pk": 9,
+    "pk": 11,
     "fields": {
         "app_label": "socialaccount",
         "model": "socialaccount"
@@ -781,7 +1408,7 @@
 },
 {
     "model": "contenttypes.contenttype",
-    "pk": 10,
+    "pk": 12,
     "fields": {
         "app_label": "socialaccount",
         "model": "socialapp"
@@ -789,7 +1416,7 @@
 },
 {
     "model": "contenttypes.contenttype",
-    "pk": 11,
+    "pk": 13,
     "fields": {
         "app_label": "socialaccount",
         "model": "socialtoken"
@@ -797,7 +1424,7 @@
 },
 {
     "model": "contenttypes.contenttype",
-    "pk": 12,
+    "pk": 14,
     "fields": {
         "app_label": "admin",
         "model": "logentry"
@@ -805,7 +1432,7 @@
 },
 {
     "model": "contenttypes.contenttype",
-    "pk": 13,
+    "pk": 15,
     "fields": {
         "app_label": "auth",
         "model": "permission"
@@ -813,7 +1440,7 @@
 },
 {
     "model": "contenttypes.contenttype",
-    "pk": 14,
+    "pk": 16,
     "fields": {
         "app_label": "auth",
         "model": "group"
@@ -821,7 +1448,7 @@
 },
 {
     "model": "contenttypes.contenttype",
-    "pk": 15,
+    "pk": 17,
     "fields": {
         "app_label": "contenttypes",
         "model": "contenttype"
@@ -829,7 +1456,7 @@
 },
 {
     "model": "contenttypes.contenttype",
-    "pk": 16,
+    "pk": 18,
     "fields": {
         "app_label": "sessions",
         "model": "session"
@@ -837,18 +1464,18 @@
 },
 {
     "model": "sessions.session",
-    "pk": "1brvaadh6darflp8ie597fa31acd9885",
+    "pk": "fexw7bnra1nrdm36xfjeu5jlso7gelpy",
     "fields": {
-        "session_data": ".eJxVjEsOwjAMBe-SNYqc1MSCJXvOUNmOSwookfpZIe4OlbqA7ZuZ93I9r0vp19mmfszu7II7_G7C-rC6gXznemteW12mUfym-J3O_tqyPS-7-3dQeC7fmpkU4mAAiKaS6SQUYwLuLAhGghAQwzEpRVQU6sAwp9ApwCCUwb0_2BM3Pg:1s5FZp:3hgK5-6EvV6-wstscqeDM3N6JMlH4S2J2njh_oUl5IQ",
-        "expire_date": "2024-05-24T02:01:37.900Z"
+        "session_data": ".eJxVjMEOwiAQBf-FsyHAAgWP3v0GAssiVQNJaU_Gf9cmPej1zcx7sRC3tYZt0BLmzM5MAjv9jinig9pO8j22W-fY27rMie8KP-jg157peTncv4MaR_3WUWMqwulkPBWlFMmohdeepNSoivIZJQKYIvOEhQAIbE5uMtraJNCx9wcRpDgw:1s7WfR:SjBbKH6LIfP5kVSD-PcOwSyH4RIL3uGJPI0_EGdWld4",
+        "expire_date": "2024-05-30T08:40:49.185Z"
     }
 },
 {
     "model": "sessions.session",
-    "pk": "narwnf2wj25xs3uq6itkxzywg8hiumns",
+    "pk": "notx05dtfo34em5ui0gat1ncdbt0qv6b",
     "fields": {
-        "session_data": ".eJxVjEsOwjAMBe-SNYqc1MSCJXvOUNmOSwookfpZIe4OlbqA7ZuZ93I9r0vp19mmfszu7II7_G7C-rC6gXznemteW12mUfym-J3O_tqyPS-7-3dQeC7fmpkU4mAAiKaS6SQUYwLuLAhGghAQwzEpRVQU6sAwp9ApwCCUwb0_2BM3Pg:1s5FZV:5q5fnrYlTvipLAsOwo8KH0LH1267dmML8PRGV2kngiE",
-        "expire_date": "2024-05-24T02:01:17.414Z"
+        "session_data": ".eJxVjDsOwjAQBe_iGll24m9K-pzBWq_XJIBsKXEqxN1JUApo38ybFwuwtSlsKy1hTmxgsmOX3zECPqgcJN2h3CrHWtoyR34o_KQrH2ui5_V0_wITrNP-zkIheAKjVczS5tRHGb1OKaMmEoCSVKaOdFRghQQNglChUD4bY43do4BYt9K-bSptRmiUAjQ2SCu1U84Jxzthe-f8-wMBnkeK:1s7Wem:nk_6cYQJCBjY9v7q5Q9gnHYH2qCO2f-opIIk3nmlFw0",
+        "expire_date": "2024-05-30T08:40:08.209Z"
     }
 }
 ]
