@@ -62,11 +62,15 @@ export const useVoteStore = defineStore('vote', () => {
     
           })
           .catch(err => {
-            const {data, balance, price} = err.response.data
-            if (data === '구매 가능 금액 미달') {
-              window.alert(`${data} \n최소 금액 : ${price}`)
-            } else {
-              window.alert(`${data} \n보유 금액 : ${balance}`)
+            if (err.response.status === 406) {
+              window.alert('마감 되었습니다.')
+            } else if (err.response.status === 400) {
+              const {data, balance, price} = err.response.data
+              if (data === '구매 가능 금액 미달') {
+                window.alert(`${data} \n최소 금액 : ${price}`)
+              } else {
+                window.alert(`${data} \n보유 금액 : ${balance}`)
+              }
             }
           })
       }
@@ -90,9 +94,11 @@ export const useVoteStore = defineStore('vote', () => {
       .catch(err => {
         if ( err.response.status === 403 ) {
           window.alert(`최상위 입찰자는 입찰 취소가 불가능 합니다.`)
-        } else [
-          window.alert('??')
-        ]
+        } else if (err.response.status === 406) {
+          window.alert('마감 되었습니다.')
+        } else {
+          window.alert('권한 없음.')
+        }
       })
   }
   return { getVoteInfo, bid, bidCancle, votes }
