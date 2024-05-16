@@ -13,12 +13,14 @@
 
 <script setup>
   import Vote from '@/components/Vote.vue'
-  import { ref, onMounted } from 'vue'
+  import { onMounted } from 'vue'
   import { useVoteStore } from '@/stores/vote';
+  import { useAccountStore } from '@/stores/accounts';
   const store = useVoteStore()
+  const accountStore = useAccountStore()
   onMounted(() => {
     store.getVoteInfo()
-    // setInterval(() => store.getVoteInfo(), 10000)
+    accountStore.getUserInfo()
   })
 
   

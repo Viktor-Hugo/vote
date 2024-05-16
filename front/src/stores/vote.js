@@ -7,6 +7,7 @@ export const useVoteStore = defineStore('vote', () => {
   const API_URL = import.meta.env.VITE_API_URL
   const accountsStore = useAccountStore()
   const votes = ref([])
+
   const getVoteInfo = function () {
     axios({
       method: 'get',
@@ -24,35 +25,52 @@ export const useVoteStore = defineStore('vote', () => {
   }
 
   const bid = function ({vote, payment}) {
-    axios({
-      method: 'post',
-      url: `${API_URL}/api/v1/bid/${vote.id}/`,
-      headers: {
-        Authorization: `Token ${accountsStore.userInfo.token}`,
-      },
-      data: {
-        payment
-      }
-    })
-      .then(res => {
-        votes.value.forEach(v => {
-          if (v.id === vote.id) {
-            v.last_bid_team = res.data.order.last_bid_team
-            v.price = res.data.order.price
-            v.teams = res.data.order.teams
+    if (window.confirm(
+        `${vote.id} 번째 발표를 \n${payment} 포인트로 입찰 합니까?
+        \n 현재 ${vote.last_bid_team === accountsStore.userInfo.id ? '당신' : vote.last_bid_team}팀이 최상위 입찰자 입니다.
+        `)) 
+      {
+      
+      if (accountsStore.userInfo.score < payment) {
+        window.alert(
+          `보유 금액 부족 \n보유 금액 : ${accountsStore.userInfo.score} \n입찰 시도 금액 : ${payment}
+          `)
+      } else if (payment <= vote.price) {
+        window.alert(
+          `구매 가능 금액 미달 \n최소 금액 : ${vote.price} \n입찰 시도 금액 : ${payment}
+          `)
+      } else {
+        axios({
+          method: 'post',
+          url: `${API_URL}/api/v1/bid/${vote.id}/`,
+          headers: {
+            Authorization: `Token ${accountsStore.userInfo.token}`,
+          },
+          data: {
+            payment
           }
         })
-        accountsStore.userInfo.score = res.data.balance
-
-      })
-      .catch(err => {
-        const {data, balance, price} = err.response.data
-        if (data === '구매 가능 금액 미달') {
-          window.alert(`${data} \n최소 금액 : ${price}`)
-        } else {
-          window.alert(`${data} \n보유 금액 : ${balance}`)
-        }
-      })
+          .then(res => {
+            votes.value.forEach(v => {
+              if (v.id === vote.id) {
+                v.last_bid_team = res.data.order.last_bid_team
+                v.price = res.data.order.price
+                v.teams = res.data.order.teams
+              }
+            })
+            accountsStore.userInfo.score = res.data.balance
+    
+          })
+          .catch(err => {
+            const {data, balance, price} = err.response.data
+            if (data === '구매 가능 금액 미달') {
+              window.alert(`${data} \n최소 금액 : ${price}`)
+            } else {
+              window.alert(`${data} \n보유 금액 : ${balance}`)
+            }
+          })
+      }
+    }
   }
 
   const bidCancle = function ({vote}) {

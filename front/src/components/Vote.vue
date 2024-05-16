@@ -7,7 +7,7 @@
     <h3>최상위 입찰가 : {{ vote.price }}</h3>
     <p>입찰 팀 목록 : </p>
     <div 
-      v-if="vote.teams.length"
+      v-if="vote?.teams.length"
       class="bid-list"
     >
       <ul>
@@ -16,6 +16,12 @@
           :class="{first: !idx}"
         >
           {{ item.team }} 팀 | 입찰가 : {{ item.payment }}
+          <span 
+            class="me-badge"
+            v-show="item.team === accountStore.userInfo.id"
+          >
+            me
+          </span>
         </li>
       </ul>
     </div>
@@ -122,5 +128,16 @@ hr {
   border: none;
   border-top: 1px solid #e0e0e0; /* Light grey border for a subtle divider */
   margin: 20px 0;
+}
+
+.me-badge {
+  display: inline-block;
+  background-color: rgb(255, 41, 41);
+  color: white;
+  padding: 4px 8px;
+  line-height: 16px;
+  text-align: center;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 </style>
