@@ -84,6 +84,7 @@ def bid_cancle(request, order_pk):
         return Response({'data': '최상위 입찰자는 입찰 취소가 불가능 합니다.'}, status=status.HTTP_403_FORBIDDEN)
     
     elif user.orders.exists():
+        bid = Bid.objects.get(team=user.pk, order=order_pk)
         user.score += bid.payment
         order.teams.remove(user)
         user.save()
