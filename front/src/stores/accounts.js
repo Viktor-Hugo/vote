@@ -10,6 +10,7 @@ export const useAccountStore = defineStore('account', () => {
   const userInfo = ref({
     token: null
   })
+
   const login = function ({username, password}) {
     axios({
       method: 'post',
@@ -36,7 +37,7 @@ export const useAccountStore = defineStore('account', () => {
       }
     }) 
       .then(res => {
-        userInfo.value = {...res.data, ...userInfo.value}
+        userInfo.value = {...userInfo.value, ...res.data}
       })
       .catch(err => console.log(err))
   }

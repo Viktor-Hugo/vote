@@ -12,18 +12,16 @@
 </template>
 
 <script setup>
-  import Vote from '@/components/Vote.vue'
-  import { onMounted } from 'vue'
+  import { onMounted } from 'vue';
   import { useVoteStore } from '@/stores/vote';
-  import { useAccountStore } from '@/stores/accounts';
+  import Vote from '@/components/Vote.vue'
+
   const store = useVoteStore()
-  const accountStore = useAccountStore()
+  
   onMounted(() => {
     store.getVoteInfo()
-    accountStore.getUserInfo()
   })
 
-  
 </script>
 
 <style scoped>

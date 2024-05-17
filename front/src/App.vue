@@ -28,13 +28,23 @@
 <script setup>
   import { RouterView, RouterLink } from 'vue-router'
   import { useAccountStore } from './stores/accounts';
+  import { ref, onMounted } from 'vue';
   import Tip from './components/Tip.vue';
-  import { ref } from 'vue';
   import axios from 'axios'
-  
+
   const API_URL = import.meta.env.VITE_API_URL
   const isActivate = ref(false)
+  const isDeadLine = ref(false)
+
+  onMounted(() => {
+    if (useAccountStore().isAuthenticated) {
+      useAccountStore().getUserInfo()
+    }
+  })
+
   const deadline = function () {
+    isDeadLine.value = !isDeadLine.value
+    window.alert(isDeadLine.value)
     axios({
       method: 'post',
       url: `${API_URL}/api/v1/deadline/`,

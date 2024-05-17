@@ -1,4 +1,5 @@
 from django.shortcuts import render, get_object_or_404
+from django.contrib.auth import get_user_model
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.decorators import api_view, authentication_classes, permission_classes
@@ -7,6 +8,8 @@ from rest_framework.permissions import IsAuthenticated
 from .models import Order, Bid, Settings, AnnouncementResult
 from .serializers import OrderListSerializer, BidSerializer, AnnouncementResultSerializer
 from .utils import check_deadline, calculate_winners
+
+User = get_user_model()
 
 # Create your views here.
 @api_view(['GET'])
@@ -119,6 +122,17 @@ def winner(request):
         calculate_winners()
         results = AnnouncementResult.objects.all().order_by('announcement_order')
         serializer = AnnouncementResultSerializer(results, many=True)
-        return Response(serializer.data)
+        remain_teams = serializer.data[0]['remain_teams']
+        data = {
+            'remain_teams': [],
+            'data': serializer.data
+        }
+        for d in serializer.data:
+            del d['remain_teams']
+        for team in remain_teams:
+            user = User.objects.get(pk=team)
+            data['remain_teams'].append({team: user.score})
+        print(data)
+        return Response(data)
     else:
         return Response(status=status.HTTP_403_FORBIDDEN)
