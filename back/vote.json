@@ -92,7 +92,7 @@
     },
 {
     "model": "accounts.user",
-    "pk": 1,
+    "pk": 13,
     "fields": {
         "password": "pbkdf2_sha256$600000$4WJ3qk7VXMvHTDRhqVmr1E$wb84HbZhThliBEYDRM91ZGGlOLU3H4UrZJfP+JEC5Wg=",
         "last_login": null,
@@ -104,14 +104,14 @@
         "is_staff": true,
         "is_active": true,
         "date_joined": "2024-11-06T01:52:05.361Z",
-        "score": 10000,
+        "score": 1000000000,
         "groups": [],
         "user_permissions": []
     }
 },
 {
     "model": "accounts.user",
-    "pk": 2,
+    "pk": 12,
     "fields": {
         "password": "pbkdf2_sha256$600000$bsClbxA0pTzZE3AiIhok9J$i5usvT5pFzbS7hHGtdpdI7SSAN2wRv/WbSZSSbnn/F0=",
         "last_login": null,
@@ -123,14 +123,14 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-11-06T01:53:31.415Z",
-        "score": 10000,
+        "score": 458100,
         "groups": [],
         "user_permissions": []
     }
 },
 {
     "model": "accounts.user",
-    "pk": 3,
+    "pk": 11,
     "fields": {
         "password": "pbkdf2_sha256$600000$5ylOvk9YfqjiQChSqiyX7N$YbDPCiar+IE3qpaQ59fbQbLHhaSqhTQ9cJczCGL11wk=",
         "last_login": null,
@@ -142,14 +142,14 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-11-06T01:53:39.504Z",
-        "score": 10000,
+        "score": 435200,
         "groups": [],
         "user_permissions": []
     }
 },
 {
     "model": "accounts.user",
-    "pk": 4,
+    "pk": 10,
     "fields": {
         "password": "pbkdf2_sha256$600000$ZrMtCwPTeOe3MSKgpITRFC$OGHnfQA5zrKsaSKF8P+M07egesGkGw3sb1x+L8O/VEs=",
         "last_login": null,
@@ -161,14 +161,14 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-11-06T01:53:55.778Z",
-        "score": 10000,
+        "score": 489200,
         "groups": [],
         "user_permissions": []
     }
 },
 {
     "model": "accounts.user",
-    "pk": 5,
+    "pk": 9,
     "fields": {
         "password": "pbkdf2_sha256$600000$elowFksAJvFP6TSOfCexXc$o15o+IdG2ZRuIaMmS3pV11hB2YdL6NjPpH2g718uLvg=",
         "last_login": null,
@@ -180,14 +180,14 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-11-06T01:54:08.310Z",
-        "score": 10000,
+        "score": 444600,
         "groups": [],
         "user_permissions": []
     }
 },
 {
     "model": "accounts.user",
-    "pk": 6,
+    "pk": 8,
     "fields": {
         "password": "pbkdf2_sha256$600000$75gnpMQYgVo7Su8X0sbk6h$hSSqbT2/PdwOlarEijSEqbi+VIkZPm26/2AnnMJvUZU=",
         "last_login": null,
@@ -199,7 +199,7 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-11-06T01:54:16.991Z",
-        "score": 10000,
+        "score": 464800,
         "groups": [],
         "user_permissions": []
     }
@@ -218,14 +218,14 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-11-06T01:54:24.469Z",
-        "score": 10000,
+        "score": 491300,
         "groups": [],
         "user_permissions": []
     }
 },
 {
     "model": "accounts.user",
-    "pk": 8,
+    "pk": 6,
     "fields": {
         "password": "pbkdf2_sha256$600000$tRVTOsbA967qO5klBXqrT5$3kqxkQ44wY59eyDTYKEBNoO4HWWrL5wPDeZOnjQ6nK0=",
         "last_login": null,
@@ -237,14 +237,14 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-11-06T01:54:40.643Z",
-        "score": 10000,
+        "score": 404400,
         "groups": [],
         "user_permissions": []
     }
 },
 {
     "model": "accounts.user",
-    "pk": 9,
+    "pk": 5,
     "fields": {
         "password": "pbkdf2_sha256$600000$HiA9AEa8JqmBiGByIcog5d$F6tTgTgiax/GfpD2SvR/PZ7aPrPeSHKTEafudTvHy4g=",
         "last_login": null,
@@ -256,14 +256,14 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-11-06T01:54:48.129Z",
-        "score": 10000,
+        "score": 469100,
         "groups": [],
         "user_permissions": []
     }
 },
 {
     "model": "accounts.user",
-    "pk": 10,
+    "pk": 4,
     "fields": {
         "password": "pbkdf2_sha256$600000$FSUL7SVvsLV7T4YD7u2W6k$oBWyQdG4wK9EIewFlqheybmP0oDG055EXYd+dogfXc0=",
         "last_login": null,
@@ -275,14 +275,14 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-11-06T01:54:57.384Z",
-        "score": 10000,
+        "score": 482200,
         "groups": [],
         "user_permissions": []
     }
 },
 {
     "model": "accounts.user",
-    "pk": 11,
+    "pk": 3,
     "fields": {
         "password": "pbkdf2_sha256$600000$u3VTuHQglAhunb9unjOY91$J0wumY7Ofhinr3wdXHsjkblDVFJ+w3vT0Ymh+mYPSMI=",
         "last_login": null,
@@ -294,14 +294,14 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-11-06T01:55:09.328Z",
-        "score": 10000,
+        "score": 454400,
         "groups": [],
         "user_permissions": []
     }
 },
 {
     "model": "accounts.user",
-    "pk": 12,
+    "pk": 2,
     "fields": {
         "password": "pbkdf2_sha256$600000$ts16WlDLGZhvIgExSqeMaz$TfHi6Jtqw/zoIuFyt36oQ62vXEQV0djcu78H5WUVRB0=",
         "last_login": null,
@@ -313,14 +313,14 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-11-06T01:55:18.843Z",
-        "score": 10000,
+        "score": 415200,
         "groups": [],
         "user_permissions": []
     }
 },
 {
     "model": "accounts.user",
-    "pk": 13,
+    "pk": 1,
     "fields": {
         "password": "pbkdf2_sha256$600000$RTFzMaZbJZCQv1UyYKcnzt$OuqToZeFOwnwE1KQvYwGkqWWFj20BJddLQ5v3nF53AY=",
         "last_login": null,
@@ -332,7 +332,7 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2024-11-06T01:55:25.507Z",
-        "score": 10000,
+        "score": 474100,
         "groups": [],
         "user_permissions": []
     }
